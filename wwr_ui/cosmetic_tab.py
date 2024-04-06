@@ -643,6 +643,7 @@ class CosmeticTab(QWidget):
     is_casual = custom_preset.get("is_casual", False)
     
     custom_model_names = customizer.get_all_custom_model_names()
+    custom_model_names.append("Link")
     
     if model_name not in custom_model_names:
       QMessageBox.critical(
